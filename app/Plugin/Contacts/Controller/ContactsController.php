@@ -132,6 +132,7 @@ class ContactsController extends ContactsAppController {
  * @access public
  */
 	public function view($alias = null) {
+		$this->layout="foundation_contact";
 		if (!$alias) {
 			$this->redirect('/');
 		}
