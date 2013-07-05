@@ -48,8 +48,7 @@
 
 			<div class="hide-for-small panel">
 				<h3>Most popular</h3>
-				<h5 class="subheader">Description of the most popular products
-				</h5>
+				<h5 class="subheader">Description of the most popular products</h5>
 			</div>
 
 		</div>
@@ -61,27 +60,38 @@
 
 		<div class="large-8 columns">
 			<div class="row">
-				<?php 
-
-
+				<?php
+				$id =1;
 				foreach ($images as &$image)
-				{
+				{	
 					echo "<div class='large-4 small-6 columns'>";
-					echo $this->Html->image('Croogo.products/'.$image);
+					echo "<a href='' data-reveal-id='".$id."'>".$this->Html->image('Croogo.products/'.$image)."</a>";
 					echo "<div class = 'panel'>";
 					echo "<h5>".$image."</h5>";
 					echo "<h6 class = 'subheader'>".$image."</h6>";
 					echo "</div></div>";
+					$id++;
 				}
-
-
 				?>
-
-
 			</div>
-
 			<!-- End Thumbnails -->
 
+			<!-- Data reveal modal for each products-->
+			<?php 
+			$id =1; 
+			foreach ($images as &$image)
+			{
+				//data reveal modal
+				echo "<div class='reveal-modal expand' id='".$id."'>";
+				echo "<h4>".$image."</h4>";
+				echo "<p>".$this->Html->image('Croogo.products/'.$image)."</p>";
+				echo "<a href='#' class='close-reveal-modal'>&times;</a>";
+				echo "</div>";
+
+				$id++;
+			}
+			?>
+			<!-- End Data reveal modal for each products-->
 
 			<!-- Managed By -->
 			<div class="row">
