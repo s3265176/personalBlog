@@ -7,170 +7,107 @@
 			<div class="large-12 columns">
 				<div class="nav-bar right">
 					<ul class="button-group">
-						<li><a href="#" class="button">Link 1</a></li>
-						<li><a href="#" class="button">Link 2</a></li>
-						<li><a href="#" class="button">Link 3</a></li>
-						<li><a href="#" class="button">Link 4</a></li>
-					</ul>
+						<li><?php echo $this->Html->link(
+							'Breads',
+							'/products/breads',
+							array('class'=>'button')
+							);?></li>
+						<li><?php echo $this->Html->link(
+							'Sweets & Cakes',
+							'/products/sweets',
+							array('class'=>'button')
+							);?></li>
+						<li><?php echo $this->Html->link(
+							'pies & drinks',
+							'/products/pies',
+							array('class'=>'button')
+							);?></li>
+						<li><?php echo $this->Html->link(
+							'Biscuits',
+							'/products/biscuits',
+							array('class'=>'button')
+							);?></li>
+						</ul>
+					</div>
+
 				</div>
-
 			</div>
+			<!-- End Top Bar -->
 		</div>
-		<!-- End Top Bar -->
-	</div>
-</div>
-
-<!-- End Navigation -->
-
-<div class="row">
-
-	<!-- Side Bar -->
-
-	<div class="large-4 small-12 columns">
-
-		<img src="http://placehold.it/500x500&text=Logo">
-
-		<div class="hide-for-small panel">
-			<h3>Header</h3>
-			<h5 class="subheader">Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis.
-			</h5>
-		</div>
-
-		<a href="#">
-			<div class="panel callout radius">
-				<h6>99&nbsp; items in your cart</h6>
-			</div>
-		</a>
-
 	</div>
 
-	<!-- End Side Bar -->
+	<!-- End Navigation -->
 
+	<div class="row">
 
-	<!-- Thumbnails -->
+		<!-- Side Bar -->
 
-	<div class="large-8 columns">
-		<div class="row">
+		<div class="large-4 small-12 columns">
 
-			<div class="large-4 small-6 columns">
-				<img src="http://placehold.it/1000x1000&text=Thumbnail">
+			<img src="http://placehold.it/500x500&text=Logo">
 
-				<div class="panel">
-					<h5>Item Name</h5>
-					<h6 class="subheader">$000.00</h6>
-				</div>
+			<div class="hide-for-small panel">
+				<h3>Most popular</h3>
+				<h5 class="subheader">Description of the most popular products
+				</h5>
 			</div>
 
-			<div class="large-4 small-6 columns">
-				<img src="http://placehold.it/500x500&text=Thumbnail">
-
-				<div class="panel">
-					<h5>Item Name</h5>
-					<h6 class="subheader">$000.00</h6>
-				</div>
-			</div>
-
-			<div class="large-4 small-6 columns">
-				<img src="http://placehold.it/500x500&text=Thumbnail">
-
-				<div class="panel">
-					<h5>Item Name</h5>
-					<h6 class="subheader">$000.00</h6>
-				</div>
-			</div>
-
-			<div class="large-4 small-6 columns">
-				<img src="http://placehold.it/500x500&text=Thumbnail">
-
-				<div class="panel">
-					<h5>Item Name</h5>
-					<h6 class="subheader">$000.00</h6>
-				</div>
-			</div>
-
-			<div class="large-4 small-6 columns">
-				<img src="http://placehold.it/500x500&text=Thumbnail">
-
-				<div class="panel">
-					<h5>Item Name</h5>
-					<h6 class="subheader">$000.00</h6>
-				</div>
-			</div>
-
-			<div class="large-4 small-6 columns">
-				<img src="http://placehold.it/500x500&text=Thumbnail">
-
-				<div class="panel">
-					<h5>Item Name</h5>
-					<h6 class="subheader">$000.00</h6>
-				</div>
-			</div>
-
-			<div class="large-4 small-6 columns">
-				<img src="http://placehold.it/500x500&text=Thumbnail">
-				
-				<div class="panel">
-					<h5>Item Name</h5>
-					<h6 class="subheader">$000.00</h6>
-				</div>
-			</div>
-
-			<div class="large-4 small-6 columns">
-				<img src="http://placehold.it/500x500&text=Thumbnail">
-				
-				<div class="panel">
-					<h5>Item Name</h5>
-					<h6 class="subheader">$000.00</h6>
-				</div>
-			</div>
-
-			<div class="large-4 small-6 columns">
-				<img src="http://placehold.it/500x500&text=Thumbnail">
-				
-				<div class="panel">
-					<h5>Item Name</h5>
-					<h6 class="subheader">$000.00</h6>
-				</div>
-			</div>
-
-			<div class="large-4 small-6 columns">
-				<img src="http://placehold.it/500x500&text=Thumbnail">
-				
-				<div class="panel">
-					<h5>Item Name</h5>
-					<h6 class="subheader">$000.00</h6>
-				</div>
-			</div>
 		</div>
 
-		<!-- End Thumbnails -->
+		<!-- End Side Bar -->
 
 
-		<!-- Managed By -->
-		<div class="row">
-			<div class="large-12 columns">
-				<div class="panel">
-					<div class="row">
+		<!-- Thumbnails -->
 
-						<div class="large-2 small-6 columns">
-							<img src="http://placehold.it/300x300&text=Site Owner">
+		<div class="large-8 columns">
+			<div class="row">
+				<?php 
+
+
+				foreach ($images as &$image)
+				{
+					echo "<div class='large-4 small-6 columns'>";
+					echo $this->Html->image('Croogo.products/'.$image);
+					echo "<div class = 'panel'>";
+					echo "<h5>".$image."</h5>";
+					echo "<h6 class = 'subheader'>".$image."</h6>";
+					echo "</div></div>";
+				}
+
+
+				?>
+
+
+			</div>
+
+			<!-- End Thumbnails -->
+
+
+			<!-- Managed By -->
+			<div class="row">
+				<div class="large-12 columns">
+					<div class="panel">
+						<div class="row">
+
+							<div class="large-2 small-6 columns">
+								<img src="http://placehold.it/300x300&text=Site Owner">
+							</div>
+
+							<div class="large-10 small-6 columns">
+								<strong>This Site Is Managed By<hr/></strong>
+
+								Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
+							</div>
+
 						</div>
-
-						<div class="large-10 small-6 columns">
-							<strong>This Site Is Managed By<hr/></strong>
-
-							Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
-						</div>
-
 					</div>
 				</div>
+
+				<!-- End Managed By -->
+
 			</div>
-
-			<!-- End Managed By -->
-
 		</div>
 	</div>
-</div>
 
 
 

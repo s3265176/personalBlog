@@ -24,6 +24,17 @@ div.paging { text-align: center; margin: 30px; }
 #wrapper { border-top: 10px solid #444; }
 */
 
+/**
+*color theam
+*Header(darkyellow) #FCD271
+*title (orange)	#F78D3F
+*link(blue) 	#2BBBD8
+*back(black)	#102E37
+*back(grey) 	#E8EDE0
+*
+*/
+
+
 body{
 	background-image:url('../img/bg1.png');
 	background-repeat:repeat;
@@ -40,9 +51,9 @@ body{
  form .textarea textarea { width: 300px; }
  form .error-message { color: #ee4b33; }
 
- #header {height:150px;background-image: url("../img/footer.png");}
+ #header {height:150px; background-color: #102E37}
  #header .site-tagline { color: #666; font-style: italic; font-size: 13px; }
- #header h1 a { text-decoration: none; }
+ #header h1 a { color: 	#FCD271;text-decoration: none; }
 /**
  * Header
 #header h1 { margin: 50px 0px 10px 0px; }
