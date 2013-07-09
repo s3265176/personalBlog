@@ -41,17 +41,17 @@
  
  <div class="row">
  	<div class="large-4 columns">
- 		<?php echo $this->Html->image('home_section/1.jpg');?>
+ 		<?php echo $this->Html->image('Croogo.home_section/1.jpg');?>
  		<h4>This is a content section.</h4>
  		<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
  	</div>
  	<div class="large-4 columns">
- 		<?php echo $this->Html->image('home_section/2.jpg');?>
+ 		<?php echo $this->Html->image('Croogo.home_section/2.jpg');?>
  		<h4>This is a content section.</h4>
  		<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
  	</div>
  	<div class="large-4 columns">
- 		<?php echo $this->Html->image('home_section/3.jpg');?>
+ 		<?php echo $this->Html->image('Croogo.home_section/3.jpg');?>
  		<h4>This is a content section.</h4>
  		<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
  	</div>

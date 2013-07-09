@@ -825,9 +825,10 @@ protected function _setCommonVariables($type) {
 
 		$dir=APP."plugin/Croogo/webroot/img/home_slider";
 
-		$imgs  = array_slice(scandir($dir,1),0,-2);
+		$imgs = array_slice(scandir($dir,1),0,-2);
 
 		$this->set('images',$imgs );
+
 	}
 
 	public function news(){
@@ -888,6 +889,7 @@ protected function _setCommonVariables($type) {
 	public function products(){
 		$this->layout = 'foundation';
 
+		$root_dir = APP."plugin/Croogo/webroot/img/products";
 		$breads_dir=APP."plugin/Croogo/webroot/img/products/breads";
 		$sweets_dir=APP."plugin/Croogo/webroot/img/products/sweets";
 		$pies_dir=APP."plugin/Croogo/webroot/img/products/pies";
@@ -921,36 +923,45 @@ protected function _setCommonVariables($type) {
 			break;
 		}
 		if(!$dir==null ){
-			$imgs  = array_slice(scandir($dir,1),0,-2);
+			$imgs  = array_slice(scandir($dir),0,-3);
 			foreach ($imgs as $key => $img){
 				$imgs[$key]  = $type.'/'.$img;
 			}
+
+			$popular = array_slice(scandir($dir.'/popular',1),0,-2);
+			$popular_description = explode('.', $popular[0]);
+			$popular[0] = $type.'/popular/'.$popular[0];
 			
 		}else{
-			$imgs1 = scandir($breads_dir,1);
+			$imgs1 = scandir($breads_dir);
 			foreach ($imgs1 as $key => $img){
 				$imgs1[$key]  = 'breads'.'/'.$img;
 			}
 
-			$imgs2 = scandir($sweets_dir,1);
+			$imgs2 = scandir($sweets_dir);
 			foreach ($imgs2 as $key => $img){
 				$imgs2[$key]  ='sweets'.'/'.$img;
 			}
 
-			$imgs3 = scandir($pies_dir,1);
+			$imgs3 = scandir($pies_dir);
 			foreach ($imgs3 as $key => $img){
 				$imgs3[$key]  = 'pies'.'/'.$img;
 			}
 
-			$imgs4 = scandir($biscuits_dir,1);
+			$imgs4 = scandir($biscuits_dir);
 			foreach ($imgs4 as $key => $img){
 				$imgs4[$key]  = 'biscuits'.'/'.$img;
 			}
 
+			$popular = array_slice(scandir($root_dir.'/popular',1),0,-2);
+			$popular_description = explode('.', $popular[0]);
+			$popular[0] = '/popular/'.$popular[0];
 
-			$imgs = array_merge(array_slice($imgs1, 0, -2),array_slice($imgs2, 0, -2),array_slice($imgs3, 0, -2),array_slice($imgs4, 0, -2));
+			$imgs = array_merge(array_slice($imgs1, 0, -3),array_slice($imgs2, 0, -3),array_slice($imgs3, 0, -3),array_slice($imgs4, 0, -3));
 		}
 
+		$this->set('popular_description',$popular_description[0]);
+		$this->set('popular',$popular[0] );
 		$this->set('images',$imgs );
 		
 

@@ -44,13 +44,13 @@
 
 		<div class="large-4 small-12 columns">
 
-			<img src="http://placehold.it/500x500&text=Logo">
-
 			<div class="hide-for-small panel">
 				<h3>Most popular</h3>
-				<h5 class="subheader">Description of the most popular products</h5>
-			</div>
+				<?php echo $this->Html->image('Croogo.products/'.$popular)?>
 
+				<h5 class="subheader"><?php echo $popular_description ?></h5>
+			</div>
+			
 		</div>
 
 		<!-- End Side Bar -->
@@ -64,11 +64,16 @@
 				$id =1;
 				foreach ($images as &$image)
 				{	
+					$parts = explode('&', $image);
+					$info = explode('$', $parts[1]);
+					$name =$info[0];
+					$price='$'.$info[1];
+
 					echo "<div class='large-4 small-6 columns'>";
 					echo "<a href='' data-reveal-id='".$id."'>".$this->Html->image('Croogo.products/'.$image)."</a>";
 					echo "<div class = 'panel'>";
-					echo "<h5>".$image."</h5>";
-					echo "<h6 class = 'subheader'>".$image."</h6>";
+					echo "<h5>".$name."</h5>";
+					echo "<h6 class = 'subheader'>".$price."</h6>";
 					echo "</div></div>";
 					$id++;
 				}
@@ -81,8 +86,10 @@
 			$id =1; 
 			foreach ($images as &$image)
 			{
+
+				
 				//data reveal modal
-				echo "<div class='reveal-modal expand' id='".$id."'>";
+				echo "<div class='reveal-modal xlarge' id='".$id."'>";
 				echo "<h4>".$image."</h4>";
 				echo "<p>".$this->Html->image('Croogo.products/'.$image)."</p>";
 				echo "<a href='#' class='close-reveal-modal'>&times;</a>";
@@ -93,31 +100,11 @@
 			?>
 			<!-- End Data reveal modal for each products-->
 
-			<!-- Managed By -->
-			<div class="row">
-				<div class="large-12 columns">
-					<div class="panel">
-						<div class="row">
+			
 
-							<div class="large-2 small-6 columns">
-								<img src="http://placehold.it/300x300&text=Site Owner">
-							</div>
-
-							<div class="large-10 small-6 columns">
-								<strong>This Site Is Managed By<hr/></strong>
-
-								Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-				<!-- End Managed By -->
-
-			</div>
 		</div>
 	</div>
+</div>
 
 
 

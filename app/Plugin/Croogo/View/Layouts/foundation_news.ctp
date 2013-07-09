@@ -96,24 +96,44 @@
 				<!-- End Sidebar -->
 			</div>
 
-			<!-- End Nav -->
-			<!-- Footer -->
+		<!-- Managed By -->
+			<div class="row">
+				<div class="large-9 columns">
+					<div class="panel">
+						<div class="row">
 
-			<!-- Footer -->
+							<div class="large-2 small-6 columns">
+								<img src="http://placehold.it/300x300&text=Site Owner">
+							</div>
+
+							<div class="large-10 small-6 columns">
+								<strong>This Site Is Managed By<hr/></strong>
+
+								Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- End Managed By -->
+			
+
+
+		</div>
+
+		<!-- Footer -->
 		<?php echo $this->element('footer');?>
+		<!-- Footer -->
 
 	</div>
 
 
+		<!-- init foundation js-->
+		<script>document.write('<script src=/js/vendor/'+ ('__proto__' in {} ? 'zepto' : 'jquery')+ '.js><\/script>');</script>
+		<script> $(document).foundation();</script>
+	</body>
 
 
 
-
-	<!-- init foundation js-->
-	<script>document.write('<script src=/js/vendor/'+ ('__proto__' in {} ? 'zepto' : 'jquery')+ '.js><\/script>');</script>
-	<script> $(document).foundation();</script>
-</body>
-
-
-
-</html>
+	</html>

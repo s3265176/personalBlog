@@ -51,7 +51,8 @@ body{
  form .textarea textarea { width: 300px; }
  form .error-message { color: #ee4b33; }
 
- #header {height:150px; background-color: #102E37}
+ #header {height:245px; background-color: black; background-image: url('../img/logo-s.jpg'); background-position: right
+ ;background-repeat: no-repeat; background-size: 60%}
  #header .site-tagline { color: #666; font-style: italic; font-size: 13px; }
  #header h1 a { color: 	#FCD271;text-decoration: none; }
 /**

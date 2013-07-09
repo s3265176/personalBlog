@@ -66,9 +66,9 @@
 
 							</p>
 							<p><span class="label">Open hour:</span><br />
-									&nbsp&nbsp&nbsp&nbsp Monday to Satday: 6:00am -6:00pm<br />
-									&nbsp&nbsp&nbsp&nbsp Sunday: 7:00am -4:00pm <br />
-									&nbsp&nbsp&nbsp&nbsp public holiday: please check our news
+								&nbsp&nbsp&nbsp&nbsp Monday to Satday: 6:00am -6:00pm<br />
+								&nbsp&nbsp&nbsp&nbsp Sunday: 7:00am -4:00pm <br />
+								&nbsp&nbsp&nbsp&nbsp public holiday: please check our news
 							</p>
 							<br />
 							<br />
@@ -89,12 +89,12 @@
 					<h5>Map</h5>
 					<!-- Clicking this placeholder fires the mapModal Reveal modal -->
 					<p>
-						<a href="" data-reveal-id="mapModal"><img src="http://placehold.it/400x280"></a><br />
+						<a href="" data-reveal-id="mapModal"><?php echo $this->Html->image("Croogo.map.jpg");?></a><br />
 						<a href="" data-reveal-id="mapModal">View Map</a>
 					</p>
 					<p>
-						123 Awesome St.<br />
-						Barsoom, MA 95155
+						469 Centre Road<br />
+						Bentleigh, Victoria
 					</p>
 				</div>
 				<!-- End Sidebar -->
@@ -104,7 +104,7 @@
 			<!-- Map Modal -->
 			<div class="reveal-modal" id="mapModal">
 				<h4>Where We Are</h4>
-				<p><img src="http://placehold.it/800x600" /></p>
+				<p><?php echo $this->html->image("Croogo.map.jpg");?></p>
 				<!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
 				<a href="#" class="close-reveal-modal">&times;</a>
 			</div>
