@@ -822,6 +822,12 @@ protected function _setCommonVariables($type) {
 
 	public function home(){
 		$this->layout = 'foundation';
+
+		$dir=APP."plugin/Croogo/webroot/img/home_slider";
+
+		$imgs  = array_slice(scandir($dir,1),0,-2);
+
+		$this->set('images',$imgs );
 	}
 
 	public function news(){

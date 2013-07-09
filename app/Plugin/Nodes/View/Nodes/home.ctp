@@ -19,22 +19,18 @@
  	<div class="large-12 columns">
  		<div id="slider">
  			<ul data-orbit>
- 				<li>
- 					<?php echo $this->Html->image('home_slider/1.jpg');?>
- 					<div class="orbit-caption">...</div>
- 				</li>
- 				<li>
- 					<?php echo $this->Html->image('home_slider/2.jpg');?>
- 					<div class="orbit-caption">...</div>
- 				</li>
- 				<li>
- 					<?php echo $this->Html->image('home_slider/3.jpg');?>
- 					<div class="orbit-caption">...</div>
- 				</li>
- 				<li>
- 					<?php echo $this->Html->image('home_slider/4.jpg');?>
- 					<div class="orbit-caption">...</div>
- 				</li>
+
+ 				<?php
+ 				foreach ($images as $image ) {
+ 					$parts = explode(".", $image);
+ 					$description = $parts[0];
+ 					echo '<li>';
+ 					echo $this->Html->image('Croogo.home_slider/'.$image);
+ 					echo "<div class='orbit-caption'>".$description."</div>";
+ 					echo '</li>';
+ 				}
+ 				?>
+
  			</ul>
  			
  		</div>
