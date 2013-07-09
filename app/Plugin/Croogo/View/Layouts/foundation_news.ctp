@@ -103,7 +103,7 @@
 						<div class="row">
 
 							<div class="large-2 small-6 columns">
-								<img src="http://placehold.it/300x300&text=Site Owner">
+								<?php echo $this->Html->image("Croogo.owner.jpg");?>
 							</div>
 
 							<div class="large-10 small-6 columns">

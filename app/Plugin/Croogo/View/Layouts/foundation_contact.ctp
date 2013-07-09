@@ -53,32 +53,43 @@
 				<div class="large-9 columns">
 					<h3>Get in Touch!</h3>
 					<p>We'd love to hear from you. You can either reach out to us as a whole and one of our awesome team members will get back to you, or if you have a specific question reach out to one of our staff. We love getting email all day <em>all day</em>.</p>
-					<div class="row">
-						
-						<div class="large-6 columns panel">
-							<p><span class="label">Email:</span><br />
-								&nbsp&nbsp&nbsp&nbsp wang1230ji@gmail.com
-							</p>
-							<p><span class="label">Phone:</span><br />
-								&nbsp&nbsp&nbsp&nbsp 0433813332<br />
-								&nbsp&nbsp&nbsp&nbsp 985919283
 
 
-							</p>
-							<p><span class="label">Open hour:</span><br />
-								&nbsp&nbsp&nbsp&nbsp Monday to Satday: 6:00am -6:00pm<br />
-								&nbsp&nbsp&nbsp&nbsp Sunday: 7:00am -4:00pm <br />
-								&nbsp&nbsp&nbsp&nbsp public holiday: please check our news
-							</p>
-							<br />
-							<br />
-						</div>
-						<div class="large-6 columns ">
+					<div class ="row">
+						<div class="large-9 columns ">
 							<?php
 							echo $this->Layout->sessionFlash();
 							echo $content_for_layout;
 							?>
 						</div>
+					</div>
+
+					<div class="row">
+						
+						<div class="large-12 columns panel ">
+							<div class="row">
+								<div class="large-6 columns  ">
+									<p><span class="label">Email:</span><br />
+										&nbsp&nbsp&nbsp&nbsp wang1230ji@gmail.com
+									</p>
+									<p><span class="label">Phone:</span><br />
+										&nbsp&nbsp&nbsp&nbsp 0433813332<br />
+										&nbsp&nbsp&nbsp&nbsp 985919283
+
+									</p>
+
+								</div>
+								<div class="large-6 columns  ">
+									<p><span class="label">Open hour:</span><br />
+										&nbsp&nbsp&nbsp&nbsp Monday to Satday: 6:00am -6:00pm<br />
+										&nbsp&nbsp&nbsp&nbsp Sunday: 7:00am -4:00pm <br />
+										&nbsp&nbsp&nbsp&nbsp public holiday: please check our news
+									</p>
+								</div>
+							</div>
+
+						</div>
+
 					</div>
 					
 				</div>
