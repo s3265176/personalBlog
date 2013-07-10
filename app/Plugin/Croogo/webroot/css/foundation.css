@@ -54,6 +54,8 @@ img {
 .right {
   float: right !important; }
 
+
+
 .text-left {
   text-align: left !important; }
 
@@ -1038,11 +1040,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #2ba6cb;
+  color: #F78D3F;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #2795b6; }
+    color: #FCD271; }
   a img {
     border: none; }
 

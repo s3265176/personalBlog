@@ -44,7 +44,7 @@
 			<h3><?php echo $this->Html->link($this->Nodes->field('title'), $this->Nodes->field('url')); ?></h3>
 			<h6><?php echo $this->Nodes->info(); ?></h6>
 			<?php echo $this->Nodes->body();?>
-			<h6 class ="right"><?php echo $this->Nodes->moreInfo();?></h6>
+			<h6 class ="right "><?php echo $this->Nodes->moreInfo();?></h6>
 		</article>
 
 		<hr />

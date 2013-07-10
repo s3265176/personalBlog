@@ -1,27 +1,34 @@
 
-	<footer>
-		<div class="row ">
+<footer>
+	<div class="row ">
 		<div class="large-12 columns">
 			<hr />
 			<div class="row">
-				<div class="large-6 columns">
-					<p style="color:#F78D3F;">&copy; Copyright no one at all. Go to town.</p>
-					<p style="color:#F78D3F;">&copy; Copyright no one at all. Go to town.</p>
+				<div class="large-4 columns">
+					<?php echo $this->Html->image('Croogo.services.png',array("class" => "right"));?>
+					
 
 				</div>
-				<div class="large-6 columns">
-					<ul class="inline-list ">
-						<li><a style="color:#F78D3F;" href="#">Link 1</a></li>
-						<li><a style="color:#F78D3F;" href="#">Link 2</a></li>
-						<li><a style="color:#F78D3F;" href="#">Link 3</a></li>
-						<li><a style="color:#F78D3F;" href="#">Link 4</a></li>
-					</ul>
+				<div class="large-4 columns">
+					<?php echo $this->Html->image('Croogo.approach.png',array("class" => "right"));?>
+					
+					
+				</div>
+				<div class="large-4 columns">
+					<?php echo $this->Html->image('Croogo.sandy.png',array("class" => "right"));?>
+					
 				</div>
 			</div>
+			
+		</div>
+	</div>
 
+	<div class="row ">
+		<hr >
+		<div class="large-12 columns">
 		</div>
-		</div>
-	</footer>
+	</div>
+</footer>
 
 
 

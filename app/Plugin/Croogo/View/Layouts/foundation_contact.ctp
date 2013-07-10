@@ -57,40 +57,16 @@
 
 					<div class ="row">
 						<div class="large-9 columns ">
+							<hr>
 							<?php
 							echo $this->Layout->sessionFlash();
 							echo $content_for_layout;
 							?>
+							<hr>
 						</div>
 					</div>
 
-					<div class="row">
-						
-						<div class="large-12 columns panel ">
-							<div class="row">
-								<div class="large-6 columns  ">
-									<p><span class="label">Email:</span><br />
-										&nbsp&nbsp&nbsp&nbsp wang1230ji@gmail.com
-									</p>
-									<p><span class="label">Phone:</span><br />
-										&nbsp&nbsp&nbsp&nbsp 0433813332<br />
-										&nbsp&nbsp&nbsp&nbsp 985919283
-
-									</p>
-
-								</div>
-								<div class="large-6 columns  ">
-									<p><span class="label">Open hour:</span><br />
-										&nbsp&nbsp&nbsp&nbsp Monday to Satday: 6:00am -6:00pm<br />
-										&nbsp&nbsp&nbsp&nbsp Sunday: 7:00am -4:00pm <br />
-										&nbsp&nbsp&nbsp&nbsp public holiday: please check our news
-									</p>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
+					
 					
 				</div>
 				<!-- End Contact Details -->
@@ -109,6 +85,35 @@
 					</p>
 				</div>
 				<!-- End Sidebar -->
+			</div>
+			<div id='contact_info' class ='panel'>
+				<div class="row">
+
+					<div class="large-12 columns  " >
+						<div class="row">
+							<div class="large-6 columns  ">
+								<p><span class="label">Email:</span><br />
+									&nbsp&nbsp&nbsp&nbsp <?php echo $this->Html->image('Croogo.mail-icon.png')?> wang1230ji@gmail.com
+								</p>
+								<p><span class="label">Phone:</span><br />
+									&nbsp&nbsp&nbsp&nbsp<?php echo $this->Html->image('Croogo.phone-icon.png')?> 0433813332 &nbsp&nbsp&nbsp&nbsp 985919283
+
+								</p>
+
+							</div>
+							<div class="large-6 columns  ">
+								<p><?php echo $this->Html->image('Croogo.home-icon.png')?>Open hour:
+									<hr >
+									 Monday to Satday: 6:00am -6:00pm<br />
+									 Sunday: 7:00am -4:00pm <br />
+									 public holiday: please check our news
+								</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
 			</div>
 			<!-- End Main Content and Sidebar -->
 			

@@ -86,7 +86,8 @@
 
 
 					<div class="panel">
-						<h5>Featured</h5>
+						<?php echo $this->Html->image('Croogo.logo-m.jpg')?>
+						
 						<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
 						<a href="#">Read More &rarr;</a>
 					</div>
@@ -107,9 +108,9 @@
 							</div>
 
 							<div class="large-10 small-6 columns">
-								<strong>This Site Is Managed By<hr/></strong>
+								<strong><?php echo $this->Html->image('Croogo.pen-icon.png')?>This Site Is Managed By<hr/></strong>
 
-								Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
+								Jiheng wang, with Bachelor Degree of Information Technology (Network Programming) at RMIT, graduated at July 2013.
 							</div>
 
 						</div>
