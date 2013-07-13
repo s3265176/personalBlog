@@ -163,7 +163,7 @@ body{
  * Footer
  */
 
-
+ 
  #footer {}
  footer { height: 300px; background-image: url("../img/footer.png");}
 
@@ -187,7 +187,7 @@ body{
  }
 
  #product_low{
- 	height: 462px;
+ 	height: 426px;
  	background-image:  url("../img/shop.jpg");
  	position: relative;
  }
@@ -233,4 +233,23 @@ body{
  	position: relative;
  	top: -30px;
  	z-index: 99;
+ }
+
+ #copyright{
+ 	font-size: 50%;
+ }
+ 
+ #powered{
+ 	font-size: 50%;
+ }
+ .home_low_section img{
+ 	border: 4px solid #fff;
+ }
+ .home_low_section h4{
+ 	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+ 	font-size: 120%;
+ }
+
+ .home_low_section p{
+ 	font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
  }

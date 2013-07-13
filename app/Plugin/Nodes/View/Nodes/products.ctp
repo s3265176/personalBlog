@@ -51,7 +51,7 @@
 
 		<div class="hide-for-small ">
 
-			<h3 ><span style="font-size:160%;">Most popular</span></h3>
+			<h3 ><span style="font-size:160%;color:	#FF9900;">Most popular</span></h3>
 			<div id ='product_display'>
 				<?php echo $this->Html->image('Croogo.products/'.$popular)?>
 

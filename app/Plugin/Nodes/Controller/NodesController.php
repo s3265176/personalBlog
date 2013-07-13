@@ -821,6 +821,7 @@ protected function _setCommonVariables($type) {
  */
 
 	public function home(){
+		$this->set("title_for_layout",'Home');
 		$this->layout = 'foundation';
 
 		$dir=APP."plugin/Croogo/webroot/img/home_slider";
@@ -832,6 +833,8 @@ protected function _setCommonVariables($type) {
 	}
 
 	public function news(){
+		$this->set("title_for_layout",'News');
+
 		$this->layout = 'foundation_news';
 
 		$this->set('title_for_layout', __d('croogo', 'Nodes'));
@@ -887,6 +890,7 @@ protected function _setCommonVariables($type) {
 	}
 
 	public function products(){
+		$this->set("title_for_layout",'Product');
 		$this->layout = 'foundation';
 
 		$root_dir = APP."plugin/Croogo/webroot/img/products";
