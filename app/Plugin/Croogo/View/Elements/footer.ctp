@@ -17,8 +17,10 @@
 				<div class="large-4 columns">
 					<div class = 'row'>
 						
-						<div class ='large-6 large-offset-3 columns panel'>
-							<span style="font-size:50%"> i said its good</span>
+						<div class ='large-6 large-offset-3 columns panel radius'>
+							<span style="font-size:60%"> We strongly suggest you to order in front so we can ensure you the most fresh.
+								<a href="contact">contact us</a>
+							</span>
 						</div>
 						<div class ='large-3 columns'>
 							<?php echo $this->Html->image('Croogo.sandy.png',array("class" => "right"));?>
@@ -32,8 +34,13 @@
 		</div>
 	</div>
 
+	
+
+	
+	<hr >
+
 	<div class="row ">
-		<hr >
+		
 		<div class="large-12 columns">
 			<div id = 'copyright' class='left'>
 				© 2013 Jiheng Wang from  <?php echo $this->Html->link('RMIT', 'http://www.rmit.edu.au')?> university
@@ -48,6 +55,8 @@
 			</div>
 		</div>
 	</div>
+
+	<div id ='footer-img'></div>
 </footer>
 
 

@@ -143,3 +143,13 @@
 	</div>
 </div>
 
+<div id='side_icon' >
+	<span style='font-size:70%;'>Order Now</span><br />
+	<?php 
+	echo $this->Html->image("Croogo.phone-icon-l.png", array(
+					"alt" => "Order Now",
+					'url' => '/contact',
+					));
+				?>
+</div>
+

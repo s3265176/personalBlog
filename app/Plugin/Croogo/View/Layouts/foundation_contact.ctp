@@ -6,7 +6,7 @@
  * @link http://www.croogo.org
  */
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -37,36 +37,40 @@
 	echo $this->Blocks->get('css');
 	echo $this->Blocks->get('script');
 	?>
+	
 </head>
 
 <body>
-	<div id="wrapper">
+	
 		<?php echo $this->element('header_nav');?>
 
-		
-
-
-		<div id="main" >
 			<!-- Main Page Content and Sidebar -->
 			<div class="row">
 				<!-- Contact Details -->
 				<div class="large-9 columns">
-					<h3>Get in Touch!</h3>
+					<h3 >Get in Touch!</h3>
 					<p>We'd love to hear from you. You can either reach out to us as a whole and one of our awesome team members will get back to you, or if you have a specific question reach out to one of our staff. We love getting email all day <em>all day</em>.</p>
 
+					<h3>Make a order now!</h3>
+					<p>We'd love to hear from you. You can either reach out to us as a whole and one of our awesome team members will get back to you, or if you have a specific question reach out to one of our staff. We love getting email all day <em>all day</em>.<br /><a class ='success label' href="products"> check out our products</a></p>
 
+
+					<h3>Any other inquiry</h3>
+					<p>We'd love to hear from you. You can either reach out to us as a whole and one of our awesome team members will get back to you, or if you have a specific question reach out to one of our staff. We love getting email all day <em>all day</em>.</p>
+
+					<hr>
 					<div class ="row">
-						<div class="large-9 columns ">
-							<hr>
+						<div class="large-9 columns panel ">
+							
 							<?php
 							echo $this->Layout->sessionFlash();
 							echo $content_for_layout;
 							?>
-							<hr>
+							
 						</div>
 					</div>
 
-					
+					<hr>
 					
 				</div>
 				<!-- End Contact Details -->
@@ -76,8 +80,8 @@
 					<h5>Map</h5>
 					<!-- Clicking this placeholder fires the mapModal Reveal modal -->
 					<p>
-						<a href="" data-reveal-id="mapModal"><?php echo $this->Html->image("Croogo.map.jpg");?></a><br />
-						<a href="" data-reveal-id="mapModal">View Map</a>
+						<a href="" data-reveal-id="mapModal_img"><?php echo $this->Html->image("Croogo.map.jpg");?></a><br />
+						<a href="" data-reveal-id="mapModal_img">View Google Map</a>
 					</p>
 					<p>
 						469 Centre Road<br />
@@ -104,9 +108,9 @@
 							<div class="large-6 columns  ">
 								<p><?php echo $this->Html->image('Croogo.home-icon.png')?>Open hour:
 									<hr >
-									 Monday to Satday: 6:00am -6:00pm<br />
-									 Sunday: 7:00am -4:00pm <br />
-									 public holiday: please check our news
+									Monday to Satday: 6:00am -6:00pm<br />
+									Sunday: 7:00am -4:00pm <br />
+									public holiday: please check our news
 								</p>
 							</div>
 						</div>
@@ -117,24 +121,24 @@
 			</div>
 			<!-- End Main Content and Sidebar -->
 			
-			<!-- Map Modal -->
-			<div class="reveal-modal" id="mapModal">
-				<h4>Where We Are</h4>
-				<p><?php echo $this->html->image("Croogo.map.jpg");?></p>
-				<!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
-				<a href="#" class="close-reveal-modal">&times;</a>
-			</div>
-			
-		</div>
+		
 
 
 		<!-- Footer -->
 		<?php echo $this->element('footer');?>
 		
+	
+
+
+	<!-- Map Modal -->
+	<div class="reveal-modal" id="mapModal_img">
+		<h4>Where We Are</h4>
+		<p><?php echo $this->html->image("Croogo.map.jpg");?></p>
+		<!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
+		<a href="#" class="close-reveal-modal">&times;</a>
 	</div>
 
-
-
+	
 
 
 

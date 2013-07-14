@@ -518,6 +518,7 @@ public function term() {
  * @access public
  */
 public function promoted() {
+	$this->layout = 'foundation_news';
 	$this->set('title_for_layout', __d('croogo', 'Nodes'));
 
 	$this->paginate['Node']['type'] = 'promoted';

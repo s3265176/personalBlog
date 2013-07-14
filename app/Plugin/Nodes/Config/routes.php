@@ -2,7 +2,7 @@
 
 // Basic
 CroogoRouter::connect('/', array(
-	'plugin' => 'nodes', 'controller' => 'nodes', 'action' => 'promoted'
+	'plugin' => 'nodes', 'controller' => 'nodes', 'action' => 'home'
 	));
 
 CroogoRouter::connect('/promoted/*', array(
